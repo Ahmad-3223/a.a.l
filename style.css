@@ -1,5 +1,8 @@
 /* Общие стили */
 body {
+    body {
+    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
+}
     font-family: 'Poppins', sans-serif;
     background: url('images/airplane-bg.jpg') no-repeat center center/cover;
     color: #fff;
@@ -57,21 +60,7 @@ nav ul li a {
     transform: scale(1.1);
 }
 
-/* Секция */
+/* Секции */
 section {
     padding: 50px 20px;
 }
-
-/* Карточки услуг */
-.service-box {
-    display: inline-block;
-    width: 30%;
-    padding: 20px;
-    margin: 10px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-}
-body {
-    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
-}
-
