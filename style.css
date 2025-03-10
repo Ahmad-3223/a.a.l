@@ -1,109 +1,3 @@
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: url('background.jpg') no-repeat center center/cover;
-    text-align: center;
-    color: white;
-}
-
-header {
-    background: rgba(0, 115, 230, 0.9);
-    padding: 15px;
-}
-
-nav ul {
-    list-style: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 15px;
-}
-
-.hero {
-    padding: 50px;
-    background: rgba(255, 255, 255, 0.2);
-    border-radius: 10px;
-}
-
-.about, .team, .flights, .contact {
-    margin: 30px;
-    padding: 20px;
-    background: rgba(255, 255, 255, 0.1);
-    border-radius: 10px;
-}
-
-.team-member {
-    display: inline-block;
-    margin: 20px;
-}
-
-.team-member img {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-}
-
-table {
-    width: 80%;
-    margin: auto;
-    background: white;
-    color: black;
-    border-collapse: collapse;
-}
-
-th, td {
-    padding: 10px;
-    border: 1px solid #ddd;
-}
-body {
-    font-family: 'Poppins', sans-serif;
-    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
-    color: #fff;
-    text-align: center;
-}
-
-button {
-    background: #ff6600;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.3s;
-}
-
-button:hover {
-    background: #cc5500;
-    transform: scale(1.1);
-}
-.nav-links {
-    display: none;
-}
-
-.nav-links.active {
-    display: block;
-}
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-    }
-
-    .container {
-        width: 100%;
-        padding: 10px;
-    }
-
-    .menu {
-        flex-direction: column;
-    }
-}
-body {
-    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
-}
-
 /* Общие стили */
 body {
     font-family: 'Poppins', sans-serif;
@@ -113,9 +7,9 @@ body {
     margin: 0;
 }
 
-/* Навигационное меню */
+/* Навигация */
 header {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.8);
     padding: 20px;
     position: fixed;
     width: 100%;
@@ -149,10 +43,6 @@ nav ul li a {
     background: rgba(0, 0, 0, 0.5);
 }
 
-.hero h2 {
-    font-size: 2.5rem;
-}
-
 .hero .btn {
     background: #ff6600;
     color: white;
@@ -167,7 +57,12 @@ nav ul li a {
     transform: scale(1.1);
 }
 
-/* Блок услуг */
+/* Секция */
+section {
+    padding: 50px 20px;
+}
+
+/* Карточки услуг */
 .service-box {
     display: inline-block;
     width: 30%;
@@ -175,10 +70,4 @@ nav ul li a {
     margin: 10px;
     background: rgba(255, 255, 255, 0.2);
     border-radius: 10px;
-}
-
-/* Контакты */
-#contact {
-    background: rgba(0, 0, 0, 0.8);
-    padding: 30px;
 }
