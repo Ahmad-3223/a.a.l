@@ -1,38 +1,21 @@
-function showAlert() {
-    alert("Забронируйте билет прямо сейчас!");
-}
-
-setInterval(() => {
-    const statuses = document.querySelectorAll(".status");
-    statuses.forEach(status => {
-        let random = Math.random();
-        if (random > 0.7) {
-            status.textContent = "Задержка";
-            status.style.color = "red";
-        } else if (random > 0.4) {
-            status.textContent = "В пути";
-            status.style.color = "green";
-        } else {
-            status.textContent = "Ожидается";
-            status.style.color = "orange";
-        }
-    });
-}, 5000);
-document.querySelector(".menu-toggle").addEventListener("click", function() {
-    document.querySelector(".nav-links").classList.toggle("active");
-});
-document.getElementById("ticket-form").addEventListener("submit", function(event) {
-    event.preventDefault();
-    let from = document.getElementById("from").value;
-    let to = document.getElementById("to").value;
-    let date = document.getElementById("date").value;
-
-    document.getElementById("result").innerHTML = 
-        `Рейсы из ${from} в ${to} на дату ${date} найдены!`;
-});
-// Анимация при прокрутке
+// Добавляем эффект затемнения в шапке при прокрутке
 window.addEventListener("scroll", function() {
     let header = document.querySelector("header");
     header.classList.toggle("scrolled", window.scrollY > 50);
 });
 
+// Добавляем анимацию появления элементов
+document.addEventListener("DOMContentLoaded", function() {
+    let sections = document.querySelectorAll("section");
+    sections.forEach(sec => {
+        sec.classList.add("hidden");
+    });
+
+    window.addEventListener("scroll", function() {
+        sections.forEach(sec => {
+            if (sec.getBoundingClientRect().top < window.innerHeight - 100) {
+                sec.classList.add("visible");
+            }
+        });
+    });
+});
