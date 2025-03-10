@@ -100,3 +100,85 @@ button:hover {
         flex-direction: column;
     }
 }
+body {
+    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
+}
+
+/* Общие стили */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: url('images/airplane-bg.jpg') no-repeat center center/cover;
+    color: #fff;
+    text-align: center;
+    margin: 0;
+}
+
+/* Навигационное меню */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Главный экран */
+.hero {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.hero h2 {
+    font-size: 2.5rem;
+}
+
+.hero .btn {
+    background: #ff6600;
+    color: white;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.hero .btn:hover {
+    background: #cc5500;
+    transform: scale(1.1);
+}
+
+/* Блок услуг */
+.service-box {
+    display: inline-block;
+    width: 30%;
+    padding: 20px;
+    margin: 10px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Контакты */
+#contact {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 30px;
+}
