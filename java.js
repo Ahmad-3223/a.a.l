@@ -4,7 +4,7 @@ window.addEventListener("scroll", function() {
     header.classList.toggle("scrolled", window.scrollY > 50);
 });
 
-// Добавляем анимацию появления элементов
+// Анимация появления элементов при скролле
 document.addEventListener("DOMContentLoaded", function() {
     let sections = document.querySelectorAll("section");
     sections.forEach(sec => {
