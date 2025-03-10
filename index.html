@@ -3,125 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Air-Linse (A.A.L)</title>
+    <title>Ahmad Airlines - Авиакампания</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-    <header>
-        <h1>Ahmad Air-Linse (A.A.L)</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">О компании</a></li>
-                <li><a href="#team">Команда</a></li>
-                <li><a href="#flights">Рейсы</a></li>
-                <li><a href="#contact">Контакты</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <section class="hero">
-        <h2>Быстрые и безопасные авиаперелёты</h2>
-        <p>Летаем по всему миру с комфортом</p>
-        <button onclick="showAlert()">Забронировать билет</button>
-    </section>
-
-    <section id="about" class="about">
-        <h2>О компании</h2>
-        <p>Ahmad Air-Linse (A.A.L) основана в 2010 году с целью сделать путешествия удобными и доступными. Сегодня мы – одна из ведущих авиакомпаний Таджикистана.</p>
-    </section>
-
-    <section id="team" class="team">
-        <h2>Наша команда</h2>
-        <div class="team-member">
-            <img src="director.jpg" alt="Генеральный директор">
-            <h3>Кодиров А.</h3>
-            <p>Генеральный директор</p>
-        </div>
-        <div class="team-member">
-            <img src="manager.jpg" alt="Менеджер">
-            <h3>Рахимов Б.</h3>
-            <p>Менеджер по логистике</p>
-        </div>
-        <div class="team-member">
-            <img src="pilot.jpg" alt="Пилот">
-            <h3>Саидов Н.</h3>
-            <p>Главный пилот</p>
-        </div>
-    </section>
-
-    <section id="flights" class="flights">
-        <h2>Расписание рейсов</h2>
-        <table>
-            <tr>
-                <th>Рейс</th>
-                <th>Откуда</th>
-                <th>Куда</th>
-                <th>Время</th>
-                <th>Статус</th>
-            </tr>
-            <tr>
-                <td>AAL-101</td>
-                <td>Душанбе</td>
-                <td>Москва</td>
-                <td>08:30</td>
-                <td class="status">В пути</td>
-            </tr>
-            <tr>
-                <td>AAL-202</td>
-                <td>Хуҷанд</td>
-                <td>Истанбул</td>
-                <td>14:45</td>
-                <td class="status">Ожидается</td>
-            </tr>
-        </table>
-    </section>
-
-    <section id="contact" class="contact">
-        <h2>Контакты</h2>
-        <p>Телефон: +992 884160800</p>
-        <p>Email: info@ahmadair.com</p>
-        <p>Адрес: Душанбе, ул. Аэропорт, 15</p>
-    </section>
-
-    <footer>
-        <p>&copy; 2025 Ahmad Air-Linse. Все права защищены.</p>
-    </footer>
-
-    <script src="script.js"></script>
-</body>
-</html>
-<section id="contact">
-    <h2>Контакты</h2>
-    <p>Телефон: +992 900 123 456</p>
-    <p>Email: info@ahmadair.com</p>
-    <p>Адрес: Душанбе, ул. Аэропорт, 15</p>
-
-    <div class="map">
-        <iframe 
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093877!2d144.95373531531662!3d-37.81627977975159!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf4c0f0c9d1b5b5c!2sAirline+Office!5e0!3m2!1sen!2sru!4v1625063136192!5m2!1sen!2sru"
-            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
-        </iframe>
-    </div>
-</section>
-<section id="booking">
-    <h2>Поиск билетов</h2>
-    <form id="ticket-form">
-        <input type="text" id="from" placeholder="Откуда?" required>
-        <input type="text" id="to" placeholder="Куда?" required>
-        <input type="date" id="date" required>
-        <button type="submit">Найти билеты</button>
-    </form>
-    <p id="result"></p>
-</section>
-<img src="images/airplane.jpg" alt="Самолёт Ahmad Airlines" width="500">
-<!DOCTYPE html>
-<html lang="tg">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ahmad Airlines</title>
-    <link rel="stylesheet" href="style.css">
+    <script defer src="script.js"></script>
 </head>
 <body>
 
@@ -130,44 +14,62 @@
         <h1>Ahmad Airlines</h1>
         <nav>
             <ul>
-                <li><a href="#home">Главная</a></li>
-                <li><a href="#services">Услуги</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#contact">Контакты</a></li>
+                <li><a href="#home">Асосӣ</a></li>
+                <li><a href="#services">Хизматҳо</a></li>
+                <li><a href="#about">Дар бораи мо</a></li>
+                <li><a href="#team">Кормандон</a></li>
+                <li><a href="#contact">Тамос</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Главная секция -->
+    <!-- Главный экран -->
     <section id="home" class="hero">
-        <h2>Ваши путешествия начинаются здесь</h2>
-        <p>Бронируйте билеты легко и удобно</p>
-        <a href="#booking" class="btn">Забронировать билет</a>
+        <h2>Сафари шумо бо мо оғоз мешавад!</h2>
+        <p>Ҳавопаймоии бехатар ва бароҳат бо Ahmad Airlines</p>
+        <a href="#booking" class="btn">Чипта фармоиш диҳед</a>
     </section>
 
-    <!-- Секция услуг -->
+    <!-- Услуги -->
     <section id="services">
-        <h2>Наши услуги</h2>
+        <h2>Хизматҳои мо</h2>
         <div class="service-box">
-            <img src="images/plane.png" alt="Авиаперелёты">
-            <h3>Авиаперелёты</h3>
-            <p>Комфортные рейсы по всему миру</p>
+            <img src="images/plane.png" alt="Парвозҳо">
+            <h3>Парвозҳо</h3>
+            <p>Парвозҳои босифат ба тамоми ҷаҳон.</p>
         </div>
         <div class="service-box">
-            <img src="images/luggage.png" alt="Багаж">
-            <h3>Дополнительный багаж</h3>
-            <p>Гибкие тарифы на багаж</p>
+            <img src="images/luggage.png" alt="Бор">
+            <h3>Бор ва бағоҷ</h3>
+            <p>Имконияти боркашонӣ бо нархи дастрас.</p>
         </div>
     </section>
 
-    <!-- Секция контактов -->
+    <!-- История компании -->
+    <section id="about">
+        <h2>Таърихи ширкат</h2>
+        <p>Ahmad Airlines соли 2005 таъсис ёфта, яке аз пешрафтатарин ширкати ҳавопаймоии Тоҷикистон мебошад.</p>
+    </section>
+
+    <!-- Команда -->
+    <section id="team">
+        <h2>Генералӣ директор ва кормандон</h2>
+        <p><strong>Генералӣ директор:</strong> Кодиров Ахмадҷон</p>
+        <p>📞 +992 884 160 800</p>
+        <p><strong>Кормандон:</strong></p>
+        <ul>
+            <li>Саидов Муҳаммад - Менеҷери парвозҳо</li>
+            <li>Ҳасанов Фаррух - Хадамоти мизоҷон</li>
+            <li>Каримова Дилноза - Муовини директор</li>
+        </ul>
+    </section>
+
+    <!-- Контакты -->
     <section id="contact">
-        <h2>Контакты</h2>
-        <p>Телефон: +992 900 123 456</p>
-        <p>Email: info@ahmadair.com</p>
+        <h2>Тамос бо мо</h2>
+        <p>📞 Телефон: +992 884 160 800</p>
+        <p>📧 Email: info@ahmadair.com</p>
     </section>
 
-    <script src="script.js"></script>
 </body>
 </html>
-
